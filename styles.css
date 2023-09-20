@@ -5,8 +5,6 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     max-width: 210px;
     height: 210px;
     border: 1px solid black;

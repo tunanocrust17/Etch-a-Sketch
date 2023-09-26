@@ -1,11 +1,14 @@
-let gridWidth = 2;
+let gridWidth = 10;
 let gridHeight = gridWidth;
 let totalDivs = gridWidth * gridHeight;
-console.log(totalDivs);
 let autoWidth = (100/gridWidth);
 let autoWidthPercentage = autoWidth+'%'
 
-console.log(autoWidthPercentage);
+let btn = document.querySelector('.btn');
+btn.addEventListener('click', e =>{
+    buttonClick();
+    handleClick();
+})
 
 let container = document.querySelector('.container');
 
@@ -16,7 +19,7 @@ for (i = 1 ; i <= totalDivs ; i++ ){
     newDiv.style.height=autoWidthPercentage;
     newDiv.textContent='0';
     container.appendChild(newDiv);
-}
+};
 
 //seleting divs
 let coloredDiv = document.querySelectorAll('.box');
@@ -25,3 +28,12 @@ coloredDiv.forEach( item => {
         item.classList.add('newStyle')
     })
 })
+
+
+let clearButton = document.querySelector('.clrbtn');
+clearButton.addEventListener('click', ()=>{
+    coloredDiv.forEach(item =>{
+        item.remove();
+    })
+    console.log("board cleared");
+});

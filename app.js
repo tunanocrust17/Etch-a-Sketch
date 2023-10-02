@@ -31,6 +31,7 @@ setGrid();
 
 let btn = document.querySelector('.btn');
 btn.addEventListener('click', () =>{
+    clearDivs();
     gridWidth = 8;
     setGrid();
     console.log('test')
@@ -45,3 +46,10 @@ clearBtn.addEventListener('click', () => {
     })
     console.log('board cleared');
 });
+
+function clearDivs(){
+    let selectDiv = document.querySelectorAll('.box');   
+    selectDiv.forEach(item=>{
+        item.remove();
+    })
+}

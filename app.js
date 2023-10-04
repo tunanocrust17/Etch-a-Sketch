@@ -29,8 +29,8 @@ selectDiv.forEach( item => {
 setGrid();
 
 
-let btn = document.querySelector('.btn');
-btn.addEventListener('click', () =>{
+let btn8 = document.getElementById('btn8');
+btn8.addEventListener('click', () =>{
     clearDivs();
     gridWidth = 8;
     setGrid();
@@ -38,11 +38,12 @@ btn.addEventListener('click', () =>{
 })
 
 
-let clearBtn = document.querySelector('.clrbtn');
+let clearBtn = document.getElementById('clrbtn');
 clearBtn.addEventListener('click', () => {
-    let selectDiv = document.querySelectorAll('.box');   
-    selectDiv.forEach(item=>{
-        item.remove();
+    
+    let boxes = document.querySelectorAll('.box');   
+    boxes.forEach(box=>{
+        box.classList.remove('newStyle');
     })
     console.log('board cleared');
 });

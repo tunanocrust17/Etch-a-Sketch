@@ -30,11 +30,11 @@ setGrid();
 
 
 let btn8 = document.getElementById('btn8');
-btn8.addEventListener('click', () =>{
+btn8.addEventListener('click', e =>{
     clearDivs();
     gridWidth = 8;
     setGrid();
-    console.log('test')
+    console.log(e)
 })
 
 

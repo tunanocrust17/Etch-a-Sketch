@@ -1,3 +1,5 @@
+let anotherStyle = document.newStyle
+
 let gridWidth = 4;
 
 function setGrid(){
@@ -35,6 +37,28 @@ btn8.addEventListener('click', e =>{
     gridWidth = 8;
     setGrid();
     console.log(e)
+})
+
+let btn10 = document.getElementById('btn10');
+btn10.addEventListener('click', e =>{
+    clearDivs();
+    gridWidth = 10;
+    setGrid();
+    console.log(e);
+})
+
+let btn25 = document.getElementById('btn25');
+btn25.addEventListener('click', ()=>{
+    clearDivs();
+    gridWidth = 25;
+    setGrid();
+})
+
+let btn50 = document.getElementById('btn50');
+btn50.addEventListener('click', ()=>{
+    clearDivs();
+    gridWidth = 50;
+    setGrid();
 })
 
 

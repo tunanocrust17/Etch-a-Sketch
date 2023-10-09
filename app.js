@@ -73,7 +73,8 @@ clearBtn.addEventListener('click', () => {
     
     let boxes = document.querySelectorAll('.box');   
     boxes.forEach(box=>{
-        box.classList.remove('newStyle');
+        box.style.backgroundColor='aquamarine';
+        // box.classList.remove('newStyle');
     })
     console.log('board cleared');
 });

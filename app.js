@@ -1,4 +1,7 @@
-let anotherStyle = document.newStyle
+function changeColor(style){
+    colorChoice = style;
+    console.log(colorChoice);
+};
 
 let gridWidth = 4;
 
@@ -7,6 +10,8 @@ function setGrid(){
     let totalDivs = gridWidth * gridHeight;
     let autoWidth = (100/gridWidth);
     let autoWidthPercentage = autoWidth+'%'
+
+    colorChoice = 'black';
 
     let container = document.querySelector('.container');
 
@@ -23,7 +28,8 @@ function setGrid(){
 let selectDiv = document.querySelectorAll('.box');
 selectDiv.forEach( item => {
     item.addEventListener('mouseover', e=>{
-        item.classList.add('newStyle')
+        item.style.backgroundColor=colorChoice;
+        // item.classList.add('newStyle')
     })
 })
 }

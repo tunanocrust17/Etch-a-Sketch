@@ -11,17 +11,23 @@
         </header>
         <div class="big-container">
             <div class="info">
-                <h3>Info</h3>
+                <h2>How To Use the Board</h3>
+                
                 <p>Hover your mouse over the board on the right to draw a fun picture!</p>
-                <button value="8" id="btn8">8x8</button>
                 <button value="10" id="btn10">10x10</button>
                 <button value="25" id="btn25">25x25</button>
-                <button value="50" id="btn50">50x50</button>
-                <button id="clrbtn">Clear Board</button>
-                <div>
+                <button value="50" id="btn50">50x50</button>   
+                <button value="8" id="btnInput">Input</button>
+                <div class="color-btns">
+                    <h3>Color Choices</h5>
+                    <p>Choose your color below and keep drawing!</p>
                     <button onclick="changeColor('black')">Black</button>
                     <button onclick= "changeColor('red')" >Red</button>
                     <button onclick= "changeColor('blue')" >Blue</button>
+                </div>
+                <div>
+                    <h3>Clear Board</h3>
+                    <button id="clrbtn">Clear Board</button>
                 </div>
             </div>
             <div class="game">

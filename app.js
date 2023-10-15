@@ -37,14 +37,6 @@ selectDiv.forEach( item => {
 setGrid();
 
 
-let btn8 = document.getElementById('btn8');
-btn8.addEventListener('click', e =>{
-    clearDivs();
-    gridWidth = 8;
-    setGrid();
-    console.log(e)
-})
-
 let btn10 = document.getElementById('btn10');
 btn10.addEventListener('click', e =>{
     clearDivs();
@@ -68,12 +60,24 @@ btn50.addEventListener('click', ()=>{
 })
 
 
+let btnInput = document.getElementById('btnInput');
+btnInput.addEventListener('click', e =>{
+    gridWidth = prompt("How many pixels do you want per side?");
+    if(gridWidth <= 60) {
+    clearDivs();
+    setGrid();
+    console.log(e)
+    } else {
+        alert("please choose a number 60 or less")
+    }
+})
+
 let clearBtn = document.getElementById('clrbtn');
 clearBtn.addEventListener('click', () => {
     
     let boxes = document.querySelectorAll('.box');   
     boxes.forEach(box=>{
-        box.style.backgroundColor='aquamarine';
+        box.style.backgroundColor='#F5F5DC';
         // box.classList.remove('newStyle');
     })
     console.log('board cleared');

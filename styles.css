@@ -1,6 +1,18 @@
 body {
     margin: 0 150px;
-    background-color: aquamarine;
+    background-color: #F9F7F7;
+    color: #112D4E;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+button{
+    background-color: #112D4E;
+    color: #DBE2EF;
+    width: 100px;
 }
 
 .big-container{
@@ -12,8 +24,8 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
 }
 
@@ -23,4 +35,8 @@ body {
 
 .newStyle{
     background-color: hsl(0, 0%, 90%);
+}
+
+.color-btns{
+    margin-top: 16px;
 }
